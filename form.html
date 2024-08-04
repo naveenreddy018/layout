@@ -1,0 +1,406 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* .item8 {
+  grid-area: 1 / 2 / 5 / 6;grid-row-start / grid-column-start / grid-row-end / grid-column-end.
+} */
+/*  .item8{
+  grid-area: 1/2/span 2/span 5;
+ } */
+</style>
+</head>
+<body>
+
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to specify where to place an item.</p>
+
+<p>The syntax is:</p>
+<p>grid-row-start / grid-column-start / grid-row-end / grid-column-end.</p>
+
+<p>Item8 will start on row-line 1 and column-line 2, and end on row-line 5 column-line 6:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+  <div class="item9">9</div>
+  <div class="item10">10</div>
+  <div class="item11">11</div>
+  <div class="item12">12</div>
+  <div class="item13">13</div>
+  <div class="item14">14</div>
+  <div class="item15">15</div>
+</div>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myarea myarea myarea myarea';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+<p>Item1, is called "myArea" and will take up the place of all five columns:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+</div>
+
+</body>
+</html>
+ -->
+ <!-- <!DOCTYPE html>
+ <html>
+ <head>
+ <style>
+ .item1 {
+   grid-area: myArea;
+ }
+ 
+ .grid-container {
+   display: grid;
+   grid-template-areas: 'myArea myArea . . . . ';
+   gap: 10px;
+   background-color: #2196F3;
+   padding: 10px;
+ }
+ 
+ .grid-container > div {
+   background-color: rgba(255, 255, 255, 0.8);
+   text-align: center;
+   padding: 20px 0;
+   font-size: 30px;
+ }
+ </style>
+ </head>
+ <body>
+ 
+ <h1>The grid-area Property</h1>
+ 
+ <p>You can use the <em>grid-area</em> property to name grid items.</p>
+ 
+ <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+ 
+ <p>Item1, is called "myArea" and will take up the place of two columns (out of five):</p>
+ 
+ <div class="grid-container">
+   <div class="item1">1</div>
+   <div class="item2">2</div>
+   <div class="item3">3</div>  
+   <div class="item4">4</div>
+   <div class="item5">5</div>
+   <div class="item6">6</div>
+   <div class="item7">7</div>
+   <div class="item8">8</div>
+   <div class="item9">9</div>
+ </div>
+ 
+ </body>
+ </html> -->
+<!--  <!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea . . .' myarea . . . ' ;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+<p>Item1, is called "myArea" and will take up the place of two columns (out of five), and will span two rows:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+</div>
+
+</body>
+</html> --> 
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
+ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      background-color: aqua;
+      display: grid;
+      grid-template-areas: 
+      'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+      
+      text-align: center;
+      gap:10px;
+
+      
+      
+
+    }
+    .item1{grid-area: header ;}
+    .item2{grid-area: menu ;}
+    .item3{grid-area: main ; }
+    .item4{grid-area: right ;}
+    .item5{grid-area: footer ;}
+
+    .item1,.item2,.item3,.item4,.item5{
+      background-color: crimson;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="item1">header</div>
+  <div class="item2">menu</div>
+  <div class="item3">main</div>
+  <div class="item4">right</div>
+  <div class="item5">footer</div>
+</div>
+
+</body>
+</html>
+ -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+     .item1{grid-area: header;}
+     .item2{grid-area: main;}
+     .item3{grid-area: menu;}
+     .item4{grid-area: right;}
+     .item5{grid-area: footer;}
+  
+  .grid{
+     background-color: aqua;
+     display: grid;
+    
+  }
+ 
+ 
+ 
+ 
+   </style>
+ </head>
+ <body>
+ <div class="grid">
+   <div class="item1">header</div>
+   <div class="item2">menu</div>
+   <div class="item3">main</div>
+   <div class="item4">right</div>
+   <div class="item5">footer</div>
+ </div>
+ 
+ </body>
+ </html>
+  -->
+  <!-- <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .item1 { grid-area: 1; }
+      .item2 { grid-area: 2; }
+      .item3 { grid-area: 3; }
+      .item4 { grid-area: 4; }
+      .item5 { grid-area: 5; }
+      
+      .grid {
+        background-color: aqua;
+        display: grid;
+        grid-template-areas: 
+        '1 1 1'
+        '2 3 4'
+        '5 5 5';
+         
+        grid-gap: 10px;
+      }
+      .grid > div{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="grid">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+  </div>
+  </body>
+  </html>
+   -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+       .grid {
+         background-color: aqua;
+         display: grid;
+         grid-template-areas: 
+           '"1 1 1"'
+           '"2 3 4 "'
+           '"5 5 5"';
+         grid-gap: 10px;
+       }
+       .item1 { grid-area: 1; }
+       .item2 { grid-area: 2; }
+       .item3 { grid-area: 3; }
+       .item4 { grid-area: 4; }
+       .item5 { grid-area: e; }
+     </style>
+   </head>
+   <body>
+   <div class="grid">
+     <div class="item1">a</div>
+     <div class="item2">b</div>
+     <div class="item3">c</div>
+     <div class="item4">d</div>
+     <div class="item5">e</div>
+   </div>
+   </body>
+   </html>
+   
