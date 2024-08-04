@@ -64,8 +64,10 @@
                 text-align: center;
                 z-index: 2;
                 padding: 20px;
-                border-radius:5px;
+                border-radius:120px;
                 left: 150px;
+                cursor: pointer;
+                transition: width 2s, height 2s, transform 1s ;
             }
             .task2{
                 position: relative;
@@ -78,6 +80,8 @@
                 padding: 20px;
                 border-radius:5px;
                 left: 400px;
+                cursor: pointer;
+                transition: width 2s, height 2s, transform 3s ;
             }
             .task3{
                 position: relative;
@@ -90,6 +94,8 @@
                 padding: 20px;
                 border-radius:5px;
                 left: 800px;
+                cursor: pointer;
+                transition: width 2s, height 2s, transform 1s ;
             }
             .task4{
                 position: relative;
@@ -100,8 +106,34 @@
                 text-align: center;
                 z-index: 2;
                 padding: 20px;
-                border-radius:5px;
+                border-radius:120px;
                 left: 1300px;
+                cursor: pointer;
+                transition: width 2s, height 2s, transform 5s ;
+            }
+            .task1:hover{
+                width:100px;
+                height: 100px;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+            .task4:hover{
+                width:100px;
+                height: 100px;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+            .task2:hover{
+                width:100px;
+                height: 100px;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+            .task3:hover{
+                width:100px;
+                height: 100px;
+                background-color: red;
+                transform: rotate(360deg);
             }
         </style>
 </head>
